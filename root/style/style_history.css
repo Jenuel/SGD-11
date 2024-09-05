@@ -1,16 +1,23 @@
 body {
     margin: 0;
+    padding-top: 100px;
 }
 
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: #F69D0F;
+    background-color: rgb(246, 157, 15);
     padding: 10px;
     text-align: center;
     justify-content: space-between;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 .logo img {
@@ -33,7 +40,7 @@ body {
 
 .navbar-links a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
@@ -52,3 +59,282 @@ body {
         margin: 10px 0;
     }
 }
+
+
+.timeline {
+    width: 100%;
+    position: absolute;
+    max-width: 1500px;
+    margin: 100px auto;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    
+}
+
+.container {
+    padding: 8.5px 50px;
+    position: relative;
+    width: 50%;
+    animation: moveDown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes moveDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0px);
+    }
+    
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+.container:nth-child(7){
+    animation-delay: 6s;
+}
+.container:nth-child(8){
+    animation-delay: 7s;
+}
+
+.textbox {
+    padding: 20px 30px;
+    background: rgba(246, 157, 15, 0.3);
+    position: relative;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.left {
+    left: 4.5%;
+}
+
+.right {
+    left: 61.20%;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -25px;
+    top: 32px;
+    z-index: 10;
+    border: 5px solid rgb(246, 158, 15);
+
+}
+
+.right img {
+    left: -25px;
+}
+
+.timeline::after {
+    animation: movingLine 8s linear forwards;
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: rgb(246, 158, 15);
+    top: 0;
+    bottom: 30px;
+    left: 61.20%;
+    margin-left: -3px;
+    z-index: -1;
+}
+@keyframes movingLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.textbox h2 {
+    top: 0;
+    font-weight: 600;
+}
+
+.textbox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Disable hover and pointer-events initially */
+.textbox {
+    pointer-events: none;
+    padding: 20px 30px;
+    background: rgba(246, 157, 15, 0.3);
+    position: relative;
+    border-radius: 6px;
+    font-size: 20px;
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    animation: enableHover 8s forwards; /* Match this duration with the timeline animation */
+}
+
+@keyframes enableHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+/* Hover effect that will only be active after the animation delay */
+.textbox:hover {
+    max-height: 300px;
+}
+
+
+.textbox p {
+    margin: 10px 0;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(246, 158, 15, 0.3);
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(246, 158, 15, 0.3);
+    left: -15px;
+}
+
+/* To Do */
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(246, 157, 15);
+        padding: 10px;
+        text-align: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .navbar-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-links li {
+        margin: 0 15px;
+        padding: 20px;
+    }
+
+    .navbar-links a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-links a:hover {
+        color: white;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar-links li {
+            margin: 10px 0;
+        }
+    }
+
+    .timeline {
+        margin: 50px auto;
+        max-width: 1000px;
+        bottom: 0;
+        position: relative;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-left: 10%;
+        height: max-content;
+    }
+
+    .textbox {
+        font-size: 13px;
+        padding-top: 0%;
+    }
+
+    .textbox h2 {
+        font-size: 16px;
+    }
+
+    .textbox small {
+        margin-bottom: 10px;
+    }
+
+    .left, .right {
+        left: 0 !important; /* Align both containers to the same position */
+        margin-left: ;
+    }
+
+    .container img {
+        top: 25%;
+        left: -375px; /* Align images consistently */
+        margin: 0 auto;
+        display: block;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
