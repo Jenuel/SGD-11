@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>History</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
     <link rel="stylesheet" href="style/style_history.css">
     <link rel="shortcut icon" href="res/navbar/11.png" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="res/navbar/giz-akzente-SDG-11.jpg" alt="SDG-11">
+            <img src="C:\maconproj\SGD-11\root\res\navbar\11.png" alt="SDG-11">
+            <p>Sustainable Development Goals</p>
         </div>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -21,127 +23,145 @@
         </ul>
     </nav>
 
-    <div class="timeline">
-        <div class="container left">
-            <img src="res/history/postWW2.png">
-            <div class="textbox">
-                <h2>1960s - 1970s: Early Concerns and Foundations</h2>
-                <small>Early Concerns and Foundations</small>
-                <p>The rapid urbanization of the post-World War II era led to significant 
-                    concerns about the growth of slums, inadequate infrastructure, and 
-                    environmental degradation in cities. The concept of sustainable 
-                    development began to take shape, with early reports and conferences 
-                    addressing urban challenges, including the 1976 Vancouver Conference 
-                    on Human Settlements.</p>
-                    <span class="left-container-arrow"></span>
-            </div>
+    <div class="timeline-container" id="timeline-1">
+        <div class="timeline-header">
+            <h2 class="timeline-header__title">HISTORY</h2>
+            <h3 class="timeline-header__subtitle">Sustainable Development Goal 11</h3>
         </div>
-
-        <div class="container right">
-            <img src="res/history/ourCommonFuture.jpg">
-            <div class="textbox">
-                <h2>1980s: Conceptualizing Sustainable Development</h2>
-                <small>Concetualizing Sustainable Development</small>
-                <p>The Brundtland Commission's 1987 report, "Our Common Future," 
-                    introduced the concept of sustainable development and highlighted 
-                    the need for balanced growth that does not compromise the ability 
-                    of future generations to meet their needs. The idea of sustainable 
-                    urban development began to gain traction.</p>
-                    <span class="right-container-arrow"></span>    
+        <div class="timeline">
+            <div class="timeline-item" data-text="Early Concerns and Foundations">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/postWW2.png" />
+                    <h2 class="timeline__content-title">1960s - 1970s</h2>
+                    <p class="timeline__content-desc">The rapid urbanization of the post-World War II era led to significant 
+                        concerns about the growth of slums, inadequate infrastructure, and 
+                        environmental degradation in cities. The concept of sustainable 
+                        development began to take shape, with early reports and conferences 
+                        addressing urban challenges, including the 1976 Vancouver Conference 
+                        on Human Settlements.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container left">
-            <img src="res/history/habitat2.png">
-            <div class="textbox">
-                <h2>1990s: Global Initiatives and the Habitat Agenda</h2>
-                <small>Global Initiatives and the Habitat Agenda</small>
-                <p>The United Nations began to focus more directly on urban issues, 
-                    culminating in the Habitat II conference in 1996, which resulted 
-                    in the Istanbul Declaration and the Habitat Agenda. 
-                    These documents outlined strategies for improving the living conditions 
-                    in urban areas and laid the groundwork for future sustainable urban development 
-                    initiatives.</p>
-                    <span class="left-container-arrow"></span>
+            <div class="timeline-item" data-text="Conceptualizing Sustainable Development">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/ourCommonFuture.jpg" />
+                    <h2 class="timeline__content-title">1980s</h2>
+                    <p class="timeline__content-desc">The Brundtland Commission's 1987 report, "Our Common Future," 
+                        introduced the concept of sustainable development and highlighted 
+                        the need for balanced growth that does not compromise the ability 
+                        of future generations to meet their needs. The idea of sustainable 
+                        urban development began to gain traction.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container right">
-            <img src="res/history/mdg.jpg">
-            <div class="textbox">
-                <h2>2000s: Millennium Development Goals</h2>
-                <small>Millenium Development Goals</small>
-                <p>The Millennium Development Goals (MDGs), established in 2000, 
-                    included targets related to improving living conditions in slums, 
-                    though they did not specifically focus on urban sustainability as 
-                    comprehensively as SDG 11 would later.</p>
-                <span class="right-container-arrow"></span>
+            <div class="timeline-item" data-text="Global Initiatives and the Habitat Agenda">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/habitat2.png" />
+                    <h2 class="timeline__content-title">1990s</h2>
+                    <p class="timeline__content-desc">The United Nations began to focus more directly on urban issues, 
+                        culminating in the Habitat II conference in 1996, which resulted 
+                        in the Istanbul Declaration and the Habitat Agenda. 
+                        These documents outlined strategies for improving the living conditions 
+                        in urban areas and laid the groundwork for future sustainable urban development 
+                        initiatives.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container left">
-            <img src="res/history/rio20_logo.jpg">
-            <div class="textbox">
-                <h2>2012: Formation of the SDG</h2>
-                <small>Formation of the Sustainable Development Goals</small>
-                <p>The United Nations Conference on Sustainable Development (Rio+20) 
-                    set the stage for the post-2015 development agenda. Discussions 
-                    during this conference emphasized the need for a new, comprehensive 
-                    framework to address urbanization, leading to the formulation of SDGs.</p>
-                <span class="left-container-arrow"></span>
+            <div class="timeline-item" data-text="Millenium Development Goals">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/mdg.jpg" />
+                    <h2 class="timeline__content-title">2000s</h2>
+                    <p class="timeline__content-desc">The Millennium Development Goals (MDGs), established in 2000, 
+                        included targets related to improving living conditions in slums, 
+                        though they did not specifically focus on urban sustainability as 
+                        comprehensively as SDG 11 would later.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container right">
-            <img src="res/history/sdg11.png">
-            <div class="textbox">
-                <h2>2015: Adoption of SDG 11</h2>
-                <small>Adoption of SDG 11</small>
-                <p>The 2030 Agenda for Sustainable Development was adopted by 
-                    all United Nations Member States during the UN Sustainable 
-                    Development Summit in September 2015. SDG 11 was officially 
-                    included as one of the 17 Sustainable Development Goals. 
-                    This goal was designed to address the specific challenges of 
-                    urbanization, such as ensuring safe and affordable housing, 
-                    sustainable transport, and resilience to disasters.</p>
-                <span class="right-container-arrow"></span>
+            <div class="timeline-item" data-text="Formation of the SDG">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/rio20_logo.jpg" />
+                    <h2 class="timeline__content-title">2012</h2>
+                    <p class="timeline__content-desc">The United Nations Conference on Sustainable Development (Rio+20) 
+                        set the stage for the post-2015 development agenda. Discussions 
+                        during this conference emphasized the need for a new, comprehensive 
+                        framework to address urbanization, leading to the formulation of SDGs.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container left">
-            <img src="res/history/present.jpg">
-            <div class="textbox">
-                <h2>2016-Present: Implementing SDG 11</h2>
-                <small>Implementing SDG 11</small>
-                <p>Since the adoption of SDG 11, efforts have been directed at 
-                    integrating this goal into national policies, urban planning 
-                    strategies, and international cooperation. The goal has been 
-                    incorporated into various local and global initiatives aimed 
-                    at improving urban resilience, enhancing infrastructure, and 
-                    promoting sustainable urban environments.</p>
-                <span class="left-container-arrow"></span>
+            <div class="timeline-item" data-text="Adoption of SDG 11">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/sdg11.png" />
+                    <h2 class="timeline__content-title">2015</h2>
+                    <p class="timeline__content-desc">The 2030 Agenda for Sustainable Development was adopted by 
+                        all United Nations Member States during the UN Sustainable 
+                        Development Summit in September 2015. SDG 11 was officially 
+                        included as one of the 17 Sustainable Development Goals. 
+                        This goal was designed to address the specific challenges of 
+                        urbanization, such as ensuring safe and affordable housing, 
+                        sustainable transport, and resilience to disasters.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="container right">
-            <img src="res/history/future.jpg">
-            <div class="textbox">
-                <h2>Future: Fowards Smart and Resilient Cities</h2>
-                <small>Fowards Smart and Resilient Cities</small>
-                <p>By 2025, significant advancements in smart city technologies are expected, 
-                    including enhanced data analytics and improved integration of the Internet 
-                    of Things (IoT) to better urban living conditions. By 2030, the target year
-                     for achieving the Sustainable Development Goals (SDGs), substantial 
-                     progress is anticipated in reducing urban inequality, improving public 
-                     transportation, and increasing green spaces. Beyond 2030, efforts will 
-                     continue to maintain and build upon the progress made, with a particular 
-                     focus on adapting to emerging challenges such as climate change and 
-                     population growth.</p>
-                <span class="right-container-arrow"></span>
+            <div class="timeline-item" data-text="Implementing SDG 11">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/present.jpg" />
+                    <h2 class="timeline__content-title">2016-Present</h2>
+                    <p class="timeline__content-desc">Since the adoption of SDG 11, efforts have been directed at 
+                        integrating this goal into national policies, urban planning 
+                        strategies, and international cooperation. The goal has been 
+                        incorporated into various local and global initiatives aimed 
+                        at improving urban resilience, enhancing infrastructure, and 
+                        promoting sustainable urban environments.</p>
+                </div>
             </div>
+            <div class="timeline-item" data-text="Forwards Smart and Resilient Cities">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="res/history/future.jpg" />
+                    <h2 class="timeline__content-title">Future</h2>
+                    <p class="timeline__content-desc">By 2025, significant advancements in smart city technologies are expected, 
+                        including enhanced data analytics and improved integration of the Internet 
+                        of Things (IoT) to better urban living conditions. By 2030, the target year
+                         for achieving the Sustainable Development Goals (SDGs), substantial 
+                         progress is anticipated in reducing urban inequality, improving public 
+                         transportation, and increasing green spaces. Beyond 2030, efforts will 
+                         continue to maintain and build upon the progress made, with a particular 
+                         focus on adapting to emerging challenges such as climate change and 
+                         population growth.</p>
+                </div>
+            </div>
+            
         </div>
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        (function($) {
+            $.fn.timeline = function() {
+                var selectors = {
+                    id: $(this),
+                    item: $(this).find(".timeline-item"),
+                    activeClass: "timeline-item--active",
+                    img: ".timeline__img"
+                };
+                selectors.item.eq(0).addClass(selectors.activeClass);
+                selectors.id.css("background-image", "url(" + selectors.item.first().find(selectors.img).attr("src") + ")");
+                var itemLength = selectors.item.length;
+                $(window).scroll(function() {
+                    var max, min;
+                    var pos = $(this).scrollTop() + $(window).height() / 6; 
+                    selectors.item.each(function(i) {
+                        min = $(this).offset().top;
+                        max = $(this).height() + $(this).offset().top;
+                        var that = $(this);
+                        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                            selectors.item.removeClass(selectors.activeClass);
+                            selectors.id.css("background-image", "url(" + selectors.item.last().find(selectors.img).attr("src") + ")");
+                            selectors.item.last().addClass(selectors.activeClass);
+                        } else if (pos <= max - 40 && pos >= min) {
+                            selectors.id.css("background-image", "url(" + $(this).find(selectors.img).attr("src") + ")");
+                            selectors.item.removeClass(selectors.activeClass);
+                            $(this).addClass(selectors.activeClass);
+                        }
+                    });
+                });
+            };
+        })(jQuery);
 
+        $("#timeline-1").timeline();
+    </script>
 </body>
 </html>
