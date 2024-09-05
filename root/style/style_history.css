@@ -323,7 +323,7 @@ body {
 
     .left, .right {
         left: 0 !important; /* Align both containers to the same position */
-        margin-left: ;
+        margin-left: 0;
     }
 
     .container img {
