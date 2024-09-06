@@ -32,9 +32,9 @@ body {
   border-bottom: 3px solid black;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-
 }
-.logo{
+
+.logo {
   display: flex;
   align-items: center;
   background-color: white;
@@ -43,7 +43,13 @@ body {
   width: 30%;
 }
 
-.logo p{
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.logo .logo-text {
   text-align: left;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -54,11 +60,6 @@ body {
   margin-right: 5px;
 }
 
-.logo img {
-  width: 100px;
-  height: auto;
-  margin-right: 15px;
-}
 
 .navbar-links {
   list-style: none;
@@ -84,13 +85,58 @@ body {
   transition: color 350ms ease-in;
 }
 
-.navbar-links li:hover{
+.navbar-links li:hover {
   background-color: rgb(3, 3, 3);
   box-shadow: 7px 7px 0 #000000;
 }
 
 .navbar-links li:hover a {
-  color:#ffffff;
+  color: #ffffff;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-color: #F19824;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .menu-toggle:checked + .navbar-toggle + .navbar-links {
+    display: flex;
+  }
+
+  .logo .logo-text {
+    display: none;
+  }
 }
 
 h1 {
