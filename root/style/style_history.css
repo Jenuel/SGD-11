@@ -204,6 +204,7 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
     .timeline-item {
         align-self: baseline !important;
         width: 90%;
@@ -224,10 +225,24 @@ body {
         width: 500px;
         border: none !important;
         font-size: 20px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
     }
 
     .timeline-item:last-child {
         padding-bottom: 40px;
+    }
+
+    .timeline__content-title {
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 
+        -1px -1px 0 #bb761d,  
+        1px -1px 0 #bb761d,  
+        -1px 1px 0 #bb761d,  
+        5px 1px 0 #bb761d;
+    }
+
+    .timeline__content-desc {
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
     }
     
 }
