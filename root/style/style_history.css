@@ -85,7 +85,7 @@ body {
 }
 
 .timeline {
-    top: -50px;
+    top: 50px;
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -97,11 +97,10 @@ body {
 .timeline__content-title {
     font-weight: normal;
     font-size: 66px;
-    margin: -10px 0 0 0;
+    margin: -50px 0 0 0;
     transition: 0.4s;
-    padding: 0 10px;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     text-shadow: 
         -1px -1px 0 #000000,  
@@ -113,13 +112,23 @@ body {
 
 .timeline__content-desc {
     margin: 0;
-    font-size: 15px;
+    font-size: 20spx;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(255, 255, 255, 0.863);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     line-height: 25px;
 }
+
+.timeline__content-desc a {
+    color: #d9a94f;
+    text-decoration: none;
+}
+
+.timeline__content-desc a:hover {
+    color: #35d7ff;
+}
+
 
 .timeline:before {
     position: absolute;
@@ -139,8 +148,6 @@ body {
 
 .timeline-item {
     padding: 40px 0;
-    opacity: 0.3;
-    filter: blur(2px);
     transition: 0.5s;
     box-sizing: border-box;
     width: calc(50% - 40px);
@@ -156,13 +163,13 @@ body {
     position: absolute;
     color: rgba(255, 253, 253, 0.884);
     font-size: 13px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-left: 2px solid rgba(255, 255, 255, .5);
-    top: 70%;
+    top: 50%;
     margin-top: -5px;
     padding-left: 15px;
-    opacity: 0;
     right: calc(-100% - 56px);
+    font-size: 30px;
 }
 
 .timeline-item:nth-child(even) {
@@ -198,22 +205,30 @@ body {
 @media only screen and (max-width: 767px) {
     .timeline-item {
         align-self: baseline !important;
-        width: 100%;
+        width: 90%;
         padding: 0 30px 150px 80px;
     }
 
+    .timeline__img {
+        max-width: 100%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+        border-radius: 10%;
+    }
+
     .timeline-item:before {
-        left: 10px !important;
+        left: 80px !important;
         padding: 0 !important;
-        top: 50px;
-        text-align: center !important;
-        width: 60px;
+        top: -30px;
+        text-align: left !important;
+        width: 500px;
         border: none !important;
+        font-size: 20px;
     }
 
     .timeline-item:last-child {
         padding-bottom: 40px;
     }
+    
 }
 
 .timeline__img {
@@ -237,7 +252,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.705);
     content: "";
 }
 
@@ -251,14 +266,14 @@ body {
 .timeline-header__title {
     color: #fff;
     font-size: 58px;
-    font-family: 'Oswald', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
     margin: 0;
 }
 
 .timeline-header__subtitle {
     color: rgba(255, 255, 255, .5);
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     letter-spacing: 5px;
     margin: 10px 0 0 0;
