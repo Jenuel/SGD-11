@@ -9,7 +9,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color:#F69D0F;
+    background-color: #ffffff;
     padding: 10px;
     text-align: center;
     justify-content: space-between;
@@ -17,10 +17,10 @@ body {
     grid-area: navbar;
     position: fixed;
     z-index: 10;
-    box-shadow: 0px 5px 4px #ce8106;
+   border-bottom: 3px solid black;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-}
+  }
 .logo{
     display: flex;
     align-items: center;
@@ -64,20 +64,20 @@ body {
 }
 
 .navbar-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
-    transition: color 350ms ease-in;
-}
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: color 350ms ease-in;
+} 
 
 .navbar-links li:hover{
-    background-color: rgb(236, 235, 235);
-    box-shadow: 7px 7px 0 #c47900;
-}
-.navbar-links li:hover a {
-    color:#F69D0F;
-}
+    background-color: rgb(3, 3, 3);
+    box-shadow: 7px 7px 0 #000000;
+  }
+  .navbar-links li:hover a {
+    color:#ffffff;
+  }
 
 * {
     margin: 0;
@@ -103,10 +103,10 @@ body {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     text-shadow: 
-        -1px -1px 0 #F69D0F,  
-        1px -1px 0 #F69D0F,  
-        -1px 1px 0 #F69D0F,  
-        5px 1px 0 #F69D0F;
+        -1px -1px 0 #000000,  
+        1px -1px 0 #000000,  
+        -1px 1px 0 #000000,  
+        5px 1px 0 #000000;
 }
 
 
