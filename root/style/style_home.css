@@ -1,94 +1,99 @@
 body {
-    margin: 0;
+margin: 0;
 }
-
-/* GRID */
-.grid {
-    display: grid;
-    height: auto;
-    width: auto;
-    justify-items: center;
-    grid-template-areas: "navbar"
-                         "banner"
-                         "about-sdg" 
-                         "sdg11-container"
-                         "news-container";
+/* MISCELLANEOUS */
+abbr{
+    text-decoration: none;
 }
 
 /* NAVBAR */
 .navbar {
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color:#F69D0F;
-    padding: 10px;
-    text-align: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    grid-area: navbar;
-    position: fixed;
-    z-index: 10;
-    box-shadow: 0px 5px 4px #ce8106;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 5px;
-    width: 30%;
+  height: 120px;
+  width: 100%;
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
-.logo p{
-    text-align: left;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-family: sans-serif;
-    width: auto;
-    margin-right: 5px;
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 30%;
 }
 
 .logo img {
-    width: 100px;
-    height: auto;
-    margin-right: 15px;
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
 }
 
+.logo .logo-text {
+  text-align: left;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: auto;
+  margin-right: 5px;
+}
+
+
 .navbar-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links li {
-    margin: 0 15px;
-    padding: 20px;
-    border-radius: 5px;
-    transition: background-color 350ms ease-in,
-                box-shadow 350ms ease-in;
+  margin: 0 15px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 350ms ease-in,
+  box-shadow 350ms ease-in;
 }
 
 .navbar-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
-    transition: color 350ms ease-in;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: color 350ms ease-in;
 }
 
-.navbar-links li:hover{
-    background-color: rgb(236, 235, 235);
-    box-shadow: 7px 7px 0 #c47900;
+.navbar-links li:hover {
+  background-color: rgb(3, 3, 3);
+  box-shadow: 7px 7px 0 #000000;
 }
+
 .navbar-links li:hover a {
-    color:#F69D0F;
+  color: #ffffff;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 /* BANNER */
@@ -100,7 +105,6 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    grid-area: banner;
 }
 
 .sdg-title-container {
@@ -124,32 +128,37 @@ body {
     padding: 0;
 }
 
+.sdg-title #phone-mode-title{
+    display: none;
+}
+
 .sdg-title-image {
     width: 100%;
     height: auto;
     filter: brightness(90%) blur(4px);
-}
-
-@media only screen and (max-width: 768px) {
-    .sdg-title {
-        font-size: 2.5rem;
     }
+
+/* GRID */
+.grid{
+    display: grid;
+    grid-template-areas: "about-sdg our-mission";
 }
 
-/* SDG */
-.about-sdg {
+/* ABOUT US */
+.about-us {
     grid-area: about-sdg;
     width: auto;
     height: auto;
     margin: 15px;
-    border: 3px dashed black;
+    border: 5px double black;
     border-radius: 5px;
-    background-color: rgb(223, 223, 223); /*changed when phone mode*/
+    background-color: rgb(241, 240, 240); /*changed when phone mode*/
     transition-property: background-color; /*changed when phone mode*/
-    transition-duration: 1s; /*changed when phone mode*/
+    transition-duration: 1s; /*changed when phone mode */
 }
 
-.sdg-heading{
+.about-us-heading,
+.mission-heading {
     font-size: 1.7rem;
     font-weight: bold;
     font-family: sans-serif;
@@ -158,32 +167,39 @@ body {
     margin-bottom: -8px;
 }
 
-.sdg-content {
+.about-us-content, 
+.mission-content {
     padding: 1px 15px 20px 15px;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.about-sdg:hover{
-    background-color: rgb(171, 171, 171); /*changed when phone mode*/
+
+/* OUR MISSION*/
+.our-mission{
+    grid-area: our-mission;
+    width: auto;
+    height: auto;
+    margin: 15px;
+    border: 5px double black;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
 }
 
 /* SDG11 */
 
 .sdg11-container{
-    grid-area: sdg11-container;
     margin: 15px;
     display: flex;
     flex-direction: column; 
-    width: 100%;
+    width: auto;
     height: auto;
     box-sizing: border-box;
-    border-left: 10px solid #333; /*changed when phone mode*/
-    border-right: 10px solid #333; /*changed when phone mode*/
-    border-top: 3px solid #333; /*changed when phone mode*/
-    border-bottom: 3px solid #333; /*changed when phone mode*/
-    border-radius: 20px;
-    background-color: rgb(223, 223, 223); /*changed when phone mode*/
+    border-left: 15px solid black; /*changed when phone mode*/
+    border-right: 15px solid black; /*changed when phone mode*/
+    border-top: 3px solid black; /*changed when phone mode*/
+    border-bottom: 3px solid black; /*changed when phone mode*/
+    background-color: rgb(241, 240, 240); /*changed when phone mode*/
 }
 
 .sdg11-heading {
@@ -194,6 +210,9 @@ body {
     color: black;
     text-align: center;
     width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
 }
 
 .sdg11-box-container {
@@ -209,7 +228,7 @@ body {
     height: 270px;
     border-radius: 5px;
     border: 1px solid black;
-    box-shadow: 7px 7px 0 #9f9f9f; /*changed when phone mode*/
+    box-shadow: 7px 7px 0 #6e6d6d; /*changed when phone mode*/
     background-color: white;
     padding: 10px;
     overflow: hidden; 
@@ -240,7 +259,7 @@ body {
     position: relative;
     left: 0;
     transition: transform 500ms ease-in-out,
-                color 500ms ease-in-out;
+    color 500ms ease-in-out;
 }
 
 .sdg11-box-content{
@@ -250,12 +269,12 @@ body {
     width: 100%;
     height: 70%;
     position: relative;
-    left: 0;    
+    left: 0;
     transition: transform 500ms ease-in-out;
 }
 
 .sdg11-box:hover {
-    background-color: #e4f2ff; /*changed when phone mode*/
+    background-color: rgb(241, 240, 240); /*changed when phone mode*/
 }
 
 .sdg11-box:hover .sdg11-image {
@@ -274,19 +293,17 @@ body {
 /* SDG11 NEWS */
 
 .news-container{
-    grid-area: news-container;
     display: flex;
     flex-direction: column; 
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     height: auto;
     margin: 15px;
-    border-left: 10px solid #333; /*changed when phone mode*/
-    border-right: 10px solid #333; /*changed when phone mode*/
-    border-top: 3px solid #333; /*changed when phone mode*/
-    border-bottom: 3px solid #333; /*changed when phone mode*/
-    background-color: rgb(223, 223, 223); /*changed when phone mode*/
-    border-radius: 20px;
+    border-left: 15px solid black; /*changed when phone mode*/
+    border-right: 15px solid black; /*changed when phone mode*/
+    border-top: 3px solid black; /*changed when phone mode*/
+    border-bottom: 3px solid black; /*changed when phone mode*/
+    background-color: rgb(241, 240, 240); /*changed when phone mode*/
 }
 
 .news-heading{
@@ -298,6 +315,8 @@ body {
     filter: drop-shadow(-2px 5px 5px rgb(186, 186, 186)); /*changed when phone mode*/
     width: 100%;
     text-align: center;
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
 }
 
 .news-box-container{
@@ -317,15 +336,14 @@ body {
     border-radius: 5px;
     background-color: white;
     margin: 30px;
-    box-shadow: 0px 5px 0px #9f9f9f; /*changed when phone mode*/
+    box-shadow: 0px 5px 0px #6e6d6d; /*changed when phone mode*/
     transition: background-color 700ms,
-                transform 700ms;
+    transform 700ms;
 }
 
 .news-image{
     width: 100%;
     height: 65%;
-    padding-bottom: 10px;
 }
 
 .news-box-content{
@@ -339,7 +357,7 @@ body {
 }
 
 .news-box:hover {
-    background-color:#e4f2ff; /*changed when phone mode*/
+    background-color:rgb(241, 240, 240); /*changed when phone mode*/
     transform: scale(1.1);
 }
 
@@ -347,43 +365,82 @@ body {
     color: black; /*changed when phone mode*/
 }
 
-  /* PHONE MODE */
+/* MEDIA QUERIES FOR PHONE MODE */
 
 @media only screen and (max-width: 480px){ 
-    /* SDG */
-    .sdg-heading{
-        font-size: 3rem;
+    /* BANNER */
+    
+    .sdg-title #general-title{
+        display: none;
     }
 
-    .about-sdg{
+    .sdg-title #phone-mode-title{
+        display: contents;
+    }
+
+    /* ABOUT US */
+    .about-us{
         background-color: #ffd38b;
-        transition-property: background-color;
-        transition-duration: 1s;
+        border: 3px dashed;
+        transition-property: background-color 1s ease-in;
     }
 
-    .sdg-heading {
-        transition: color 500ms ease-in,
-                    transition 500ms ease-in;
-    }
-
-    .sdg-content {
+    .about-us-heading {
+        font-size: 3rem;
         transition: color 500ms ease-in;
     }
-    
-    .about-sdg:hover{
+
+    .about-us-content {
+        transition: color 500ms ease-in;
+    }
+
+    .about-us:active{
         background-color: #F69D0F;
     }
 
-    .about-sdg:hover .sdg-heading{
+    .about-us:active .about-us-heading{
         color: white;
         filter: drop-shadow(-2px 5px 5px black);
     }
 
-    .about-sdg:hover .sdg-content{
-        color:#d3d7da;
+    .about-us:active .about-us-content{
+        color:#e5e5e5;
     }
 
-    .sdg-content{
+    .about-us-content{
+        font-size: 1.7rem;
+    }
+
+    /* OUR MISSION */
+    .our-mission{
+        background-color: #ffd38b;
+        border: 3px dashed;
+        transition-property: background-color 1s ease-in;
+    }
+
+    .mission-heading {
+        font-size: 3rem;
+        transition: color 500ms ease-in;
+    }
+
+    .mission-content {
+        transition: color 500ms ease-in;
+    }
+
+    .our-mission:active{
+        background-color: #F69D0F;
+    }
+
+    .our-mission:active .mission-heading{
+        color: white;
+        filter: drop-shadow(-2px 5px 5px black);
+    }
+
+    .our-mission:active .mission-content{
+        color:#e5e5e5;
+    }
+
+    .mission-content{
         font-size: 1.7rem;
     }
 
@@ -394,6 +451,7 @@ body {
         border-right: 10px solid #F69D0F;
         border-top: 3px dashed #F69D0F;
         border-bottom: 3px dashed #F69D0F;
+        border-radius: 20px;
         background-color: #ffd38b;
     }
 
@@ -401,6 +459,7 @@ body {
         color: white;
         filter: drop-shadow(-2px 5px 5px black);
         font-size: 3rem;
+        border-bottom: 3px dotted #F69D0F;
     }
 
     .sdg11-box-title{
@@ -413,18 +472,21 @@ body {
 
     .sdg11-box{
         box-shadow: 7px 7px 0 #c47900;
-        transition: background-color 1s;
+        transition: background-color 100ms ease-in;
         width: 300px;
         height: 400px;
     }
-    
-    .sdg11-box:hover {
+
+    .sdg11-box:active {
         background-color: #F69D0F;
     }
-    
-    .sdg11-box:hover .sdg11-box-title {
-        color: white;
 
+    .sdg11-box:active .sdg11-box-title {
+        color: white;
+    }
+
+    .sdg11-box:active .sdg11-box-content {
+        color:#e5e5e5;
     }
 
     /* NEWS */
@@ -434,6 +496,7 @@ body {
         border-right: 10px solid #F69D0F; 
         border-top: 3px dashed #F69D0F; 
         border-bottom: 3px dashed #F69D0F; 
+        border-radius: 20px;
         background-color: #ffd38b;
     }
 
@@ -441,10 +504,11 @@ body {
         color: white;
         filter: drop-shadow(-2px 5px 5px black);
         font-size: 3rem;
+        border-bottom: 3px dotted #F69D0F;
     }
 
     .news-box-content {
-        font-size: 1.3rem;
+        font-size: 0.5rem;
     }
 
     .news-box{
@@ -452,15 +516,35 @@ body {
         width: 600px;
     }
 
-    .news-box:hover {
+    .news-box:active {
         background-color:#F69D0F; 
     }
 
-    .news-box:hover .news-box-content{
+    .news-box:active .news-box-content{
         color: white; 
     }
 }
 
+/* TABLET MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    .grid{
+        grid-template-areas: "about-sdg"
+                             "our-mission";
+    }
+
+    .first{
+        display: none;
+    }
+
+    .sdg-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* NAVABAR MEDIQ QUERIES, TO BE REMOVED */
 @media (max-width: 768px) {
     .navbar {
         justify-content: center;
@@ -484,4 +568,3 @@ body {
         position: relative;
     }
 }
-
