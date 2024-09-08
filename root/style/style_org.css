@@ -405,9 +405,13 @@ h3 {
 }
 
 @media (max-width: 480px) {
-
   .program {
     background-color: #F19824;
+    width: auto; 
+    max-width: 100%;
+    padding: 10px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
   }
 
   .program .title {
@@ -421,7 +425,14 @@ h3 {
   .program .reference {
     font-size: 0.9rem;
   }
+
+  .program-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0; 
+  }
 }
+
 
 .org-parent-container{
   padding-top: 60px;
