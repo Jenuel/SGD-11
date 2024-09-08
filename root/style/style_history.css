@@ -305,9 +305,10 @@ body {
     .timeline-item:last-child {
         padding-bottom: 40px;
     }
-
+    
     .timeline__content-title {
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 50px;
         text-shadow: 
         -1px -1px 0 #bb761d,  
         1px -1px 0 #bb761d,  
