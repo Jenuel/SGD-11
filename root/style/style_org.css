@@ -175,14 +175,20 @@ h3 {
 }
 
 .grid-adv{
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3,1fr);
   justify-content: center;
+  align-content: space-evenly;
+  align-items: center;
   grid-gap: 2rem;
   text-align: center;
   width: 90%;
   margin: auto;
-  border-color: #000000;
+  border-radius: 10px;
+  border: solid black 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0.5rem 1rem rgb(0,0,0,0.7);
 }
 
 .advocacy{
@@ -193,6 +199,8 @@ h3 {
   cursor: pointer;
   transition: 0.2s;
   position: relative;
+  height: 300px;
+  width: 490px;
 }
 
 .image img{
