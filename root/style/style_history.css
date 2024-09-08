@@ -281,6 +281,7 @@ body {
         align-self: baseline !important;
         width: 90%;
         padding: 0 30px 150px 80px;
+        text-shadow: 1px 1px 10px #000000, 1px 1px 10px #615757;
     }
 
     .timeline__img {
@@ -376,11 +377,13 @@ body {
     .timeline-header__title {
         color: #ffd000;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 1px 1px 10px #bba55c, 1px 1px 10px #615757;
     } 
     
     
     .timeline-header__subtitle {
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 1px 1px 10px #000000, 1px 1px 10px #615757;
     }
     
 }
