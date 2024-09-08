@@ -281,6 +281,7 @@ body {
         align-self: baseline !important;
         width: 90%;
         padding: 0 30px 150px 80px;
+        text-shadow: 1px 1px 10px #000000, 1px 1px 10px #615757;
     }
 
     .timeline__img {
@@ -290,22 +291,24 @@ body {
     }
 
     .timeline-item:before {
-        left: 80px !important;
+        left: 50px !important;
         padding: 0 !important;
         top: -30px;
         text-align: left !important;
-        width: 500px;
+        width: 400px;
         border: none !important;
         font-size: 20px;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+
     }
 
     .timeline-item:last-child {
         padding-bottom: 40px;
     }
-
+    
     .timeline__content-title {
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 50px;
         text-shadow: 
         -1px -1px 0 #bb761d,  
         1px -1px 0 #bb761d,  
@@ -376,11 +379,13 @@ body {
     .timeline-header__title {
         color: #ffd000;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 1px 1px 10px #bba55c, 1px 1px 10px #615757;
     } 
     
     
     .timeline-header__subtitle {
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 1px 1px 10px #000000, 1px 1px 10px #615757;
     }
     
 }
