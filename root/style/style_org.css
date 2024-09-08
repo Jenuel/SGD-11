@@ -146,6 +146,10 @@ h1 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 28px;
+}
+
 .panels {
   margin-top: 160px; 
 }
@@ -305,6 +309,7 @@ h1 {
 }
 
 .program {
+  background-color: #ffffff;
   flex-grow: 1;
   padding: 20px;
   margin: 10px;
@@ -541,6 +546,10 @@ h1 {
 text-align: center;
 padding: 100px 20px;
 }
+
+.organizations h3{
+  text-align: center;
+  }
 
 
 
