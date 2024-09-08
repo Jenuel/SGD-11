@@ -291,14 +291,15 @@ body {
     }
 
     .timeline-item:before {
-        left: 80px !important;
+        left: 50px !important;
         padding: 0 !important;
         top: -30px;
         text-align: left !important;
-        width: 500px;
+        width: 400px;
         border: none !important;
         font-size: 20px;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+
     }
 
     .timeline-item:last-child {
