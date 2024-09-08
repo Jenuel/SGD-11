@@ -30,6 +30,8 @@ body {
     border: 3px solid white;
     border-radius: 5px;
     width: 25%;
+    height: 70px;
+    min-width: 200px;
 }
 
 .logo img {
@@ -93,15 +95,29 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
     .navbar-links {
-        display: none;
-        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        width: 30%;
+        min-width: 30%;
         flex-direction: column;
         position: absolute;
-        top: 120px;
-        left: 0;
+        top: 90px;
+        right: 0;
         background-color: #F19824;
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
+        z-index: -10;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.418);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .logo {
+        height: 70px;
+        width: 200px;
+        min-width: 200px;
+        max-height: 70px;
     }
 
     .navbar-links li {
@@ -112,16 +128,21 @@ body {
 
     .navbar-toggle {
         display: block;
+        color: #fff;
     }
 
     .menu-toggle:checked + .navbar-toggle + .navbar-links {
-        display: flex;
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 10;
     }
 
     .logo .logo-text {
         display: none;
     }
 }
+
 
 /*TIMELINE*/
 .timeline {
@@ -251,7 +272,7 @@ body {
 @media only screen and (max-width: 767px) {
 
     .timeline__content {
-        background-color: rgba(82, 50, 9, 0.699);
+        background-color: rgba(53, 39, 8, 0.678);
         padding: 50px;
         border-radius: 65px;
     }
