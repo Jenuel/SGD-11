@@ -38,10 +38,14 @@ abbr{
     min-width: 200px;
 }
 
-.logo img {
+.logo #logo-image {
     width: 70px;
     height: auto;
     margin-right: 15px;
+}
+
+.logo #logo-image-2 {
+    display: none;
 }
 
 .logo .logo-text {
@@ -364,23 +368,40 @@ abbr{
     color: black; /*changed when phone mode*/
 }
 
+@media only screen and (max-width: 1024px) {
+    .sdg-title {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+}
 
 /* TABLET MEDIA QUERIES */
 @media only screen and (max-width: 768px){
+    
+    /* BANNER */
+    .first{
+        display: none;
+    }
+
+    .sdg-title-container #general-title{
+        display: none;
+    }
+
+    .sdg-title-container #phone-mode-title{
+        display: contents;
+    }
+
+    .sdg-title {
+        font-size: 1.4rem;
+        padding-top: 40px;
+    }
+
+    /* ABOUT US */
     .grid{
         grid-template-areas: "about-sdg"
                              "our-mission";
     }
 
-    .first{
-        display: none;
-    }
-
-    .sdg-title {
-        font-size: 2rem;
-    }
-
-    /* ABOUT US */
     .about-us{
         background-color: #ffd38b;
         border: 3px dashed;
@@ -465,7 +486,7 @@ abbr{
     }
 
     .sdg11-box-title{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .sdg11-box-content{
@@ -475,8 +496,8 @@ abbr{
     .sdg11-box{
         box-shadow: 7px 7px 0 #c47900;
         transition: background-color 100ms ease-in;
-        width: auto;
-        height: 600px;
+        width: 500px;
+        height: 500px;
     }
 
     .sdg11-box:active {
@@ -529,18 +550,10 @@ abbr{
 
 /* MEDIA QUERIES FOR PHONE MODE */
 @media only screen and (max-width: 426px){ 
-
+    /* BANNER */
     .sdg-title{
-        padding-top: 70px;
-        font-size: 1.3rem;
-    }
-
-    .sdg-title-container #general-title{
-        display: none;
-    }
-
-    .sdg-title-container #phone-mode-title{
-        display: contents;
+        padding-top: 50px;
+        font-size: 1.1rem;
     }
 
     /* SDG11 */
@@ -564,10 +577,13 @@ abbr{
 }
 
 @media only screen and (max-width: 400px){ 
+    /* BANNER */
+
     .sdg-title{
         font-size: 1rem;
     }
     
+    /* SDG-11 */
     .sdg11-box{
         height: 300px;
     }
@@ -577,19 +593,28 @@ abbr{
     }
 
     .sdg11-box-content{
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
+    /* NEWS */
     .news-box-content{
         font-size: 0.5rem;
     }
 }
 
-/* NAVABAR MEDIQ QUERIES*/
+@media only screen and (max-width: 340px){ 
+    /* NEWS */
+    .news-box-content{
+        font-size: 0.3rem;
+    }
+}
+
+/* NAVABAR MEDIQ QUERIES */
 @media (max-width: 768px) {
     .navbar{
         background: linear-gradient(#F19824, white);
     }
+
     .navbar-links {
         max-height: 0;
         overflow: hidden;
@@ -610,10 +635,31 @@ abbr{
     }
 
     .logo {
-        height: 70px;
-        width: 250px;
-        min-width: 200px;
-        max-height: 70px;
+        width: auto;
+        height: auto;
+        min-width: 0px;
+    }
+
+    .logo p{
+        display: none;
+    }
+    
+    .logo img {
+        margin-right: 0px;
+    }
+    
+    .logo .logo-text {
+        margin-right: 0px;
+    }
+    
+    .logo #logo-image {
+        display: none;
+    }
+    
+    .logo #logo-image-2 {
+        display:block;
+        width: 70px;
+        height: auto;
     }
 
     .navbar-links li {
