@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: rgb(10, 10, 10);
     display: flex;
+    flex-direction: column;
     background-color: rgb(228, 225, 225);
 }
 
@@ -551,6 +552,24 @@ h3 {
 .org-parent-container .box-container .org-box .btn:hover {
   background-color: #1e293b;
   color: #fff;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  background-color: #333;
+
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; 
+
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  margin: 3%;
 }
 
 @media (min-width: 768px) {
