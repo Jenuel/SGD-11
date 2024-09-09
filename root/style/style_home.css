@@ -30,7 +30,7 @@ abbr{
 .logo {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #FFFFFF;
     border: 3px solid white;
     border-radius: 5px;
     width: 25%;
@@ -405,7 +405,7 @@ abbr{
     .about-us{
         background-color: #ffd38b;
         border: 3px dashed;
-        transition-property: background-color 1s ease-in;
+        transition: background-color 1s ease-in;
     }
 
     .about-us-heading {
@@ -438,7 +438,7 @@ abbr{
     .our-mission{
         background-color: #ffd38b;
         border: 3px dashed;
-        transition-property: background-color 1s ease-in;
+        transition: background-color 1s ease-in;
     }
 
     .mission-heading {
@@ -531,7 +531,7 @@ abbr{
     }
 
     .news-box-content {
-        font-size: auto;
+        width: auto;
     }
 
     .news-box{
