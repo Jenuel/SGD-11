@@ -35,7 +35,7 @@ abbr{
     border-radius: 5px;
     width: 25%;
     height: 70px;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 .logo #logo-image {
@@ -609,7 +609,7 @@ abbr{
     }
 }
 
-/* NAVABAR MEDIQ QUERIES */
+/* NAVABAR MEDIA QUERIES */
 @media (max-width: 768px) {
     .navbar{
         background: linear-gradient(#F19824, white);
