@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: rgb(10, 10, 10);
     display: flex;
+    flex-direction: column;
     background-color: rgb(228, 225, 225);
 }
 
@@ -553,6 +554,24 @@ h3 {
   color: #fff;
 }
 
+footer {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  background-color: #333;
+
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; 
+
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  margin: 3%;
+}
+
 @media (min-width: 768px) {
   .button-81 {
     font-size: 1.125rem;
@@ -713,5 +732,24 @@ padding: 100px 20px;
       transform: translateY(0);
       z-index: 10;
   }
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0; 
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 3%;
 }
 
