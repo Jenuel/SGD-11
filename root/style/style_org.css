@@ -265,8 +265,7 @@ h3 {
   color: #ffffff;
   bottom: 0px;
   width: 100%;
-  height: 30%;
-  padding: 2rem;
+  height: 25%;
   overflow: hidden;
   transition: 0.7s;
   
@@ -275,11 +274,7 @@ h3 {
 
 .card-content:hover {
   height: 80%;
-  background: linear-gradient(to bottom, black, transparent);
-}
 
-.card-content:hover img {
-  filter: blur(100px); /* Adjust the blur amount as needed */
 }
 
 
