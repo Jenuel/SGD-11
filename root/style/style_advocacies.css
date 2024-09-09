@@ -197,11 +197,6 @@ h3 {
   font-weight: 700;
   font-style: normal;
   font: 10000rem;
-  border: solid #000000 4px;
-  box-sizing: border-box;
-
-
-
 }
 
 
@@ -281,6 +276,7 @@ h3 {
 @media (max-width: 1024px){
   .grid-adv{
     grid-template-columns: repeat(2, 1fr);
+    
   }
  
   
@@ -289,7 +285,9 @@ h3 {
 @media (max-width: 767px){
   .grid-adv{
     grid-template-columns: repeat(1, 1fr);
+    border-color: #ffffff;
   }
+  
   
 }
 
